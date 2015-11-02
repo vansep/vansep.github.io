@@ -1,0 +1,205 @@
+.chart-holder {
+	width: 940px;
+	position: relative;
+	margin: 50px auto 0;	
+}
+
+.chart-holder text{
+	font-family: 'lato';
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.chart-holder path{
+	cursor: pointer;
+}
+
+/*.chart-holder g.secure path	{background: red}*/
+
+.chart-popup {
+	position: absolute;
+	width: 240px;
+	height: 240px;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.chart-popup.shown {
+	opacity: 1;
+}
+.chart-popup.architect {
+	right: 0;
+	top: 20px;
+}
+.chart-popup.architect.shown {
+	top: 50px;
+}
+.chart-popup.build {
+	bottom: 0;
+	right: 0px;
+}
+.chart-popup.build.shown {
+	bottom: 50px;
+	right: 0px;
+}
+
+.chart-popup.secure {
+	right: 0;
+	top: 120px;
+}
+.chart-popup.secure.shown {
+	top: 150px;
+}
+.chart-popup.plan {
+	
+	top: 120px;
+}
+.chart-popup.plan.shown {
+	top: 150px;
+}
+.chart-popup.manage {
+	bottom: 0;
+}
+.chart-popup.manage.shown {
+	bottom: 50px;
+}
+
+
+#chart-container {
+	position: relative;
+	left: 0;
+	right: 0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+#chart-container.left {
+	left: -100px;
+}
+#chart-container.right {
+	left: 100px;
+}
+#chart .arc {
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	-moz-transition: -moz-transform 0.3s ease-in-out;
+	-ms-transition: -ms-transition 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+#chart .architect.focused {
+	-webkit-transform: scale(1.1) translateX(-44px) translateY(-40px) translateZ(0);
+	-moz-transform: scale(1.1) translateX(-44px) translateY(-40px) translateZ(0);
+	-ms-transform: scale(1.1) translateX(-44px) translateY(-40px) translateZ(0);
+	transform: scale(1.1) translateX(-44px) translateY(-40px) translateZ(0);
+}
+#chart .secure.focused {
+	-webkit-transform: scale(1.1) translateX(-32px) translateY(-31px) translateZ(0);
+	-moz-transform: scale(1.1) translateX(-32px) translateY(-31px) translateZ(0);
+	-ms-transform: scale(1.1) translateX(-32px) translateY(-31px) translateZ(0);
+	transform: scale(1.1) translateX(-32px) translateY(-31px) translateZ(0);
+}
+#chart .build.focused {
+	-webkit-transform: scale(1.1) translateX(-37px) translateY(-17px) translateZ(0);
+	-moz-transform: scale(1.1) translateX(-37px) translateY(-17px) translateZ(0);
+	-ms-transform: scale(1.1) translateX(-37px) translateY(-17px) translateZ(0);
+	transform: scale(1.1) translateX(-37px) translateY(-17px) translateZ(0);
+}
+#chart .manage.focused {
+	-webkit-transform: scale(1.1) translateX(-51px) translateY(-17px) translateZ(0);
+	-moz-transform: scale(1.1) translateX(-51px) translateY(-17px) translateZ(0);
+	-ms-transform: scale(1.1) translateX(-51px) translateY(-17px) translateZ(0);
+	transform: scale(1.1) translateX(-51px) translateY(-17px) translateZ(0);
+}
+#chart .plan.focused {
+	-webkit-transform: scale(1.1) translateX(-55px) translateY(-31px) translateZ(0);
+	-moz-transform: scale(1.1) translateX(-55px) translateY(-31px) translateZ(0);
+	-ms-transform: scale(1.1) translateX(-55px) translateY(-31px) translateZ(0);
+	transform: scale(1.1) translateX(-55px) translateY(-31px) translateZ(0);
+}
+.chart-popup .btn-c{
+	position: relative;
+	z-index: 99;
+}
+.chart-popup{
+	text-align: right;
+}
+.chart-popup.architect,.chart-popup.secure,.chart-popup.build{
+	text-align: left;
+}
+.chart-mobile{
+	width:100%;
+	padding:20px;
+}
+.chart-mobile .cm-box{
+	text-align: left;
+	margin-left:30px;
+	padding:20px 20px 20px 60px;
+	position: relative;
+}
+.cm-box img{
+	position: absolute;
+	left:-45px;
+	top:5px;
+}
+.chart-popup h5, .cm-box h5, .cm-box h3{
+	
+	font-size: 22px;
+	font-family: 'lato';
+	font-weight:900;
+	margin-bottom: 10px;
+	line-height: 24px;
+}
+.cm-box{
+	min-height: 100px;
+}
+.cm-box h5,.cm-box h3{
+	font-size: 23px;
+	line-height: 28px;
+}
+.chart-popup p, .cm-box p{
+color: #7F7F7F;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.cm-box p{
+	color: #000;
+}
+.cm-box.plan{
+	background-color: #f5cb8d;
+}
+.cm-box.architect{
+	background-color: #da8384;
+}
+.cm-box.secure{
+	background-color: #7acbe0;
+}
+.cm-box.build{
+	background-color: #96b1b7;
+}
+.cm-box.manage{
+	background-color: #c2a6ce;
+}
+.chart-popup.architect h5, .cm-box.architect h5, .cm-box.architect h3{
+	color: #994240;
+}
+.chart-popup.secure h5, .cm-box.secure h5, .cm-box.secure h3{
+	color: #2e6e7f;
+}
+.chart-popup.build h5, .cm-box.build h5, .cm-box.build h3{
+	color: #4e5e63;
+}
+.chart-popup.manage h5, .cm-box.manage h5, .cm-box.manage h3{
+	color: #625366;
+}
+.chart-popup.plan h5, .cm-box.plan h5, .cm-box.plan h3{
+	color: #926448;
+}
+.chart-popup img{
+	display: none;
+}
+.chart-mobile div img{
+	display: block;
+}
