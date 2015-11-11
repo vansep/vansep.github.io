@@ -218,7 +218,7 @@ div.box {
     padding-top: 36px; 
     border-top: 1px solid #eeeeee; 
     width: 100%;
-    height: 160px;
+    height: 260px;
     /*min-width: 800px;*/
     /*overflow-x: auto;*/
 
@@ -341,6 +341,20 @@ a.divlink{
                 font-weight: lighter;
                 cursor: pointer;
             }
+            div.box {
+    position: relative;
+/*    width: 200px;
+    height: 200px;*/
+  /*  background: #eee;*/
+    color: #000;
+    padding-top: 36px; 
+    border-top: 1px solid #eeeeee; 
+    width: 100%;
+    height: 160px;
+    /*min-width: 800px;*/
+    /*overflow-x: auto;*/
+
+}
 
         }
         @media screen and (min-width: 992px) {
@@ -360,6 +374,20 @@ a.divlink{
                 font-weight: lighter;
                 cursor: pointer;
             }
+            div.box {
+    position: relative;
+/*    width: 200px;
+    height: 200px;*/
+  /*  background: #eee;*/
+    color: #000;
+    padding-top: 36px; 
+    border-top: 1px solid #eeeeee; 
+    width: 100%;
+    height: 160px;
+    /*min-width: 800px;*/
+    /*overflow-x: auto;*/
+
+}
 
         }
         @media screen and (min-width: 1200px) {
