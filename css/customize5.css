@@ -237,7 +237,7 @@ a.visited{
     padding-top: 30px;
     height: 0;
     overflow: hidden;
-    margin-top: 50px;
+    margin-bottom: 100px;
 }
 .video-container iframe, .video-container object, .video-container embed{
     position: absolute;
@@ -246,6 +246,7 @@ a.visited{
     width: 100%;
     height: 100%;
 }
+
 /*.label-default{
     background-color: #eeeeee;
     color: #333;
@@ -333,7 +334,14 @@ ul{
     font-size: 30px;
     font-family: roboto;
     float: left;
+    padding-bottom: 50px;
 }
+    .corousel-control.left{
+        background-image: none;
+    }
+    .corousel-control.right{
+        background-image: none;
+    }
 .challenge{
     font-weight: 300;
     font-size: 30px;
